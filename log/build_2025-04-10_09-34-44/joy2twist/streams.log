@@ -1,0 +1,42 @@
+[0.009s] Invoking command in '/home/colcon_ws/build/joy2twist': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/colcon_ws/build/joy2twist -- -j12 -l12
+[0.039s] [35m[1mConsolidate compiler generated dependencies of target joy2twist[0m
+[0.054s] [ 50%] [32mBuilding CXX object CMakeFiles/joy2twist.dir/src/joy2twist.cpp.o[0m
+[1.878s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:6:17:[m[K [01;31m[Kerror: [m[K‘[01m[KPS4[m[K’ is not a namespace-name
+[1.878s]     6 | using namespace [01;31m[KPS4[m[K
+[1.878s]       |                 [01;31m[K^~~[m[K
+[1.878s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:6:20:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kclass[m[K’
+[1.878s]     6 | using namespace PS4
+[1.878s]       |                    [01;31m[K^[m[K
+[1.878s]       |                    [32m[K;[m[K
+[1.879s]     7 | 
+[1.879s]     8 | [32m[Kclass[m[K example_joy:public ros::NodeHandle, public ps
+[1.879s]       | [32m[K~~~~~[m[K               
+[1.879s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:8:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[1.879s]     8 | class example_joy:public [01;31m[Kros[m[K::NodeHandle, public ps
+[1.879s]       |                          [01;31m[K^~~[m[K
+[1.879s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:8:31:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[KNodeHandle[m[K’
+[1.879s]     8 | class example_joy:public ros::[01;31m[KNodeHandle[m[K, public ps
+[1.879s]       |                               [01;31m[K^~~~~~~~~~[m[K
+[1.879s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:8:43:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kpublic[m[K’
+[1.879s]     8 | class example_joy:public ros::NodeHandle, [01;31m[Kpublic[m[K ps
+[1.879s]       |                                           [01;31m[K^~~~~~[m[K
+[1.879s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.879s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:27:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[1.879s]    27 |     [01;31m[Kros[m[K::init(argc, argv. "joy_test");
+[1.879s]       |     [01;31m[K^~~[m[K
+[1.879s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:27:27:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before string constant
+[1.879s]    27 |     ros::init(argc, argv. [01;31m[K"joy_test"[m[K);
+[1.879s]       |                           [01;31m[K^~~~~~~~~~[m[K
+[1.879s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:28:21:[m[K [01;31m[Kerror: [m[Kaggregate ‘[01m[Kexample_joy joy[m[K’ has incomplete type and cannot be defined
+[1.879s]    28 |         example_joy [01;31m[Kjoy[m[K;
+[1.879s]       |                     [01;31m[K^~~[m[K
+[1.880s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:29:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[1.880s]    29 |         [01;31m[Kros[m[K::spin();
+[1.880s]       |         [01;31m[K^~~[m[K
+[1.880s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:30:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[1.880s]    30 |         [01;31m[Kros[m[K::shutdown();
+[1.880s]       |         [01;31m[K^~~[m[K
+[2.212s] gmake[2]: *** [CMakeFiles/joy2twist.dir/build.make:76: CMakeFiles/joy2twist.dir/src/joy2twist.cpp.o] Error 1
+[2.212s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/joy2twist.dir/all] Error 2
+[2.212s] gmake: *** [Makefile:146: all] Error 2
+[2.213s] Invoked command in '/home/colcon_ws/build/joy2twist' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/colcon_ws/build/joy2twist -- -j12 -l12

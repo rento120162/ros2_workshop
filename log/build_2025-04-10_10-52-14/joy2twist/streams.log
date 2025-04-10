@@ -1,0 +1,11 @@
+[0.008s] Invoking command in '/home/colcon_ws/build/joy2twist': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/colcon_ws/build/joy2twist -- -j12 -l12
+[0.040s] [35m[1mConsolidate compiler generated dependencies of target joy2twist[0m
+[0.053s] [ 50%] [32mBuilding CXX object CMakeFiles/joy2twist.dir/src/joy2twist.cpp.o[0m
+[0.230s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/joy.hpp: No such file or directory
+[0.230s]     6 | #include [01;31m[K"sensor_msgs/msg/joy.hpp"[m[K
+[0.230s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.230s] compilation terminated.
+[0.232s] gmake[2]: *** [CMakeFiles/joy2twist.dir/build.make:76: CMakeFiles/joy2twist.dir/src/joy2twist.cpp.o] Error 1
+[0.232s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/joy2twist.dir/all] Error 2
+[0.232s] gmake: *** [Makefile:146: all] Error 2
+[0.234s] Invoked command in '/home/colcon_ws/build/joy2twist' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/colcon_ws/build/joy2twist -- -j12 -l12

@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target joy2twist[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/joy2twist.dir/src/joy2twist.cpp.o[0m
+[100%] [32m[1mLinking CXX executable joy2twist[0m
+[100%] Built target joy2twist
+-- Install configuration: ""
+-- Installing: /home/colcon_ws/install/joy2twist/lib/joy2twist/joy2twist
+-- Set runtime path of "/home/colcon_ws/install/joy2twist/lib/joy2twist/joy2twist" to ""
+-- Installing: /home/colcon_ws/install/joy2twist/share/ament_index/resource_index/package_run_dependencies/joy2twist
+-- Installing: /home/colcon_ws/install/joy2twist/share/ament_index/resource_index/parent_prefix_path/joy2twist
+-- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/environment/ament_prefix_path.sh
+-- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/environment/ament_prefix_path.dsv
+-- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/environment/path.sh
+-- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/environment/path.dsv
+-- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/local_setup.bash
+-- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/local_setup.sh
+-- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/local_setup.zsh
+-- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/local_setup.dsv
+-- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/package.dsv
+-- Installing: /home/colcon_ws/install/joy2twist/share/ament_index/resource_index/packages/joy2twist
+-- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/cmake/joy2twistConfig.cmake
+-- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/cmake/joy2twistConfig-version.cmake
+-- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/package.xml

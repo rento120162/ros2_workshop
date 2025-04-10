@@ -1,0 +1,26 @@
+[0.008s] Invoking command in '/home/colcon_ws/build/joy2twist': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/colcon_ws/build/joy2twist -- -j12 -l12
+[0.040s] [35m[1mConsolidate compiler generated dependencies of target joy2twist[0m
+[0.054s] [ 50%] [32mBuilding CXX object CMakeFiles/joy2twist.dir/src/joy2twist.cpp.o[0m
+[6.495s] [100%] [32m[1mLinking CXX executable joy2twist[0m
+[6.831s] [100%] Built target joy2twist
+[6.839s] Invoked command in '/home/colcon_ws/build/joy2twist' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/colcon_ws/build/joy2twist -- -j12 -l12
+[6.847s] Invoking command in '/home/colcon_ws/build/joy2twist': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/colcon_ws/build/joy2twist
+[6.853s] -- Install configuration: ""
+[6.853s] -- Installing: /home/colcon_ws/install/joy2twist/lib/joy2twist/joy2twist
+[6.855s] -- Set runtime path of "/home/colcon_ws/install/joy2twist/lib/joy2twist/joy2twist" to ""
+[6.855s] -- Installing: /home/colcon_ws/install/joy2twist/share/ament_index/resource_index/package_run_dependencies/joy2twist
+[6.855s] -- Installing: /home/colcon_ws/install/joy2twist/share/ament_index/resource_index/parent_prefix_path/joy2twist
+[6.855s] -- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/environment/ament_prefix_path.sh
+[6.855s] -- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/environment/ament_prefix_path.dsv
+[6.855s] -- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/environment/path.sh
+[6.856s] -- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/environment/path.dsv
+[6.856s] -- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/local_setup.bash
+[6.856s] -- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/local_setup.sh
+[6.856s] -- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/local_setup.zsh
+[6.856s] -- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/local_setup.dsv
+[6.856s] -- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/package.dsv
+[6.856s] -- Installing: /home/colcon_ws/install/joy2twist/share/ament_index/resource_index/packages/joy2twist
+[6.856s] -- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/cmake/joy2twistConfig.cmake
+[6.857s] -- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/cmake/joy2twistConfig-version.cmake
+[6.857s] -- Installing: /home/colcon_ws/install/joy2twist/share/joy2twist/package.xml
+[6.859s] Invoked command in '/home/colcon_ws/build/joy2twist' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/colcon_ws/build/joy2twist

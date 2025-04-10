@@ -1,0 +1,86 @@
+[0.000000] (-) TimerEvent: {}
+[0.000097] (-) JobUnselected: {'identifier': 'micro_ros_agent'}
+[0.000121] (-) JobUnselected: {'identifier': 'micro_ros_msgs'}
+[0.000136] (-) JobUnselected: {'identifier': 'micro_ros_setup'}
+[0.000188] (joy2twist) JobQueued: {'identifier': 'joy2twist', 'dependencies': OrderedDict()}
+[0.000576] (joy2twist) JobStarted: {'identifier': 'joy2twist'}
+[0.006662] (joy2twist) JobProgress: {'identifier': 'joy2twist', 'progress': 'cmake'}
+[0.007015] (joy2twist) JobProgress: {'identifier': 'joy2twist', 'progress': 'build'}
+[0.007556] (joy2twist) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/colcon_ws/build/joy2twist', '--', '-j12', '-l12'], 'cwd': '/home/colcon_ws/build/joy2twist', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('NV_LIBCUBLAS_VERSION', '11.11.3.6-1'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-8'), ('HOSTNAME', 'rentomakisima-GCL2060RGF-T'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/colcon_ws/install/micro_ros_agent/lib:/home/colcon_ws/install/micro_ros_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('NV_LIBNCCL_PACKAGE_VERSION', '2.15.5-1'), ('HOME', '/root'), ('OLDPWD', '/home/colcon_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('NV_LIBNPP_PACKAGE', 'libnpp-11-8=11.8.0.86-1'), ('CUDA_VERSION', '11.8.0'), ('COLCON_PREFIX_PATH', '/home/colcon_ws/install'), ('ROS_DISTRO', 'humble'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-11-8'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.8 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '11.7.5.86-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'compute,utility'), ('NV_CUDA_LIB_VERSION', '11.8.0-1'), ('NV_LIBNCCL_PACKAGE_NAME', 'libnccl2'), ('TERM', 'xterm'), ('NV_CUDA_CUDART_VERSION', '11.8.89-1'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-11-8=11.11.3.6-1'), ('NVARCH', 'x86_64'), ('DISPLAY', ':0'), ('NV_LIBNCCL_PACKAGE', 'libnccl2=2.15.5-1+cuda11.8'), ('NVIDIA_PRODUCT_NAME', 'CUDA'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/colcon_ws/install/micro_ros_setup:/home/colcon_ws/install/micro_ros_agent:/home/colcon_ws/install/micro_ros_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NV_NVTX_VERSION', '11.8.86-1'), ('NV_LIBNPP_VERSION', '11.8.0.86-1'), ('PWD', '/home/colcon_ws/build/joy2twist'), ('TURTLEBOT3_MODEL', 'waffle'), ('PYTHONPATH', '/home/colcon_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('NCCL_VERSION', '2.15.5-1'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/colcon_ws/install/micro_ros_setup:/home/colcon_ws/install/micro_ros_agent:/home/colcon_ws/install/micro_ros_msgs:/opt/ros/humble')]), 'shell': False}
+[0.041414] (joy2twist) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target joy2twist\x1b[0m\n'}
+[0.054696] (joy2twist) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/joy2twist.dir/src/joy2twist.cpp.o\x1b[0m\n'}
+[0.099917] (-) TimerEvent: {}
+[0.200139] (-) TimerEvent: {}
+[0.300363] (-) TimerEvent: {}
+[0.400576] (-) TimerEvent: {}
+[0.500837] (-) TimerEvent: {}
+[0.601107] (-) TimerEvent: {}
+[0.701326] (-) TimerEvent: {}
+[0.801537] (-) TimerEvent: {}
+[0.901752] (-) TimerEvent: {}
+[1.002018] (-) TimerEvent: {}
+[1.102241] (-) TimerEvent: {}
+[1.202466] (-) TimerEvent: {}
+[1.302695] (-) TimerEvent: {}
+[1.402996] (-) TimerEvent: {}
+[1.503273] (-) TimerEvent: {}
+[1.603511] (-) TimerEvent: {}
+[1.703764] (-) TimerEvent: {}
+[1.804036] (-) TimerEvent: {}
+[1.811292] (joy2twist) StderrLine: {'line': b'\x1b[01m\x1b[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:48:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 at end of input\n'}
+[1.811441] (joy2twist) StderrLine: {'line': b'   48 | }\n'}
+[1.811496] (joy2twist) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.811545] (joy2twist) StderrLine: {'line': b'\x1b[01m\x1b[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:10:45:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.811592] (joy2twist) StderrLine: {'line': b'   10 | class JoyTransrateNode : public rclcpp::Node\x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[1.811639] (joy2twist) StderrLine: {'line': b'      |                                             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.817923] (joy2twist) StderrLine: {'line': b'\x1b[01m\x1b[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KJoyTransrateNode::JoyTransrateNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.818033] (joy2twist) StderrLine: {'line': b'\x1b[01m\x1b[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:24:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.818111] (joy2twist) StderrLine: {'line': b'   24 |         \x1b[01;31m\x1b[Kpublisher\x1b[m\x1b[K = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);\n'}
+[1.818164] (joy2twist) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.821229] (joy2twist) StderrLine: {'line': b'\x1b[01m\x1b[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[1.821472] (joy2twist) StderrLine: {'line': b'\x1b[01m\x1b[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:29:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kliner\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Klinear\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.821577] (joy2twist) StderrLine: {'line': b'   29 |             message.\x1b[01;31m\x1b[Kliner\x1b[m\x1b[K.x = liner_x * msg.axes[1];\n'}
+[1.821629] (joy2twist) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.821704] (joy2twist) StderrLine: {'line': b'      |                     \x1b[32m\x1b[Klinear\x1b[m\x1b[K\n'}
+[1.821750] (joy2twist) StderrLine: {'line': b'\x1b[01m\x1b[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:30:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kliner\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Klinear\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.821823] (joy2twist) StderrLine: {'line': b'   30 |             message.\x1b[01;31m\x1b[Kliner\x1b[m\x1b[K.y = liner_y * msg.axes[2];\n'}
+[1.821870] (joy2twist) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.821917] (joy2twist) StderrLine: {'line': b'      |                     \x1b[32m\x1b[Klinear\x1b[m\x1b[K\n'}
+[1.821987] (joy2twist) StderrLine: {'line': b'\x1b[01m\x1b[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:32:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass JoyTransrateNode\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kpublisher\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.822056] (joy2twist) StderrLine: {'line': b'   32 |             this->\x1b[01;31m\x1b[Kpublisher\x1b[m\x1b[K->publish(message);\n'}
+[1.822131] (joy2twist) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.826656] (joy2twist) StderrLine: {'line': b'\x1b[01m\x1b[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KJoyTransrateNode::JoyTransrateNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.826765] (joy2twist) StderrLine: {'line': b'\x1b[01m\x1b[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:35:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksubscriber\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.826819] (joy2twist) StderrLine: {'line': b'   35 |         \x1b[01;31m\x1b[Ksubscriber\x1b[m\x1b[K = this->create_subscription<sensor_msgs::msg::Joy>("joy", 10, callback);\n'}
+[1.826868] (joy2twist) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.857864] (joy2twist) StderrLine: {'line': b'\x1b[01m\x1b[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:36:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kprivate\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.858001] (joy2twist) StderrLine: {'line': b'   36 | \x1b[01;31m\x1b[Kprivate\x1b[m\x1b[K:\n'}
+[1.858055] (joy2twist) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.862121] (joy2twist) StderrLine: {'line': b'\x1b[01m\x1b[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:\x1b[m\x1b[K At global scope:\n'}
+[1.862219] (joy2twist) StderrLine: {'line': b'\x1b[01m\x1b[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:48:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id at end of input\n'}
+[1.862273] (joy2twist) StderrLine: {'line': b'   48 | }\n'}
+[1.862322] (joy2twist) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.904161] (-) TimerEvent: {}
+[2.004392] (-) TimerEvent: {}
+[2.104610] (-) TimerEvent: {}
+[2.204868] (-) TimerEvent: {}
+[2.305272] (-) TimerEvent: {}
+[2.405646] (-) TimerEvent: {}
+[2.505921] (-) TimerEvent: {}
+[2.606237] (-) TimerEvent: {}
+[2.706597] (-) TimerEvent: {}
+[2.806893] (-) TimerEvent: {}
+[2.907137] (-) TimerEvent: {}
+[3.007432] (-) TimerEvent: {}
+[3.107723] (-) TimerEvent: {}
+[3.208026] (-) TimerEvent: {}
+[3.308393] (-) TimerEvent: {}
+[3.408621] (-) TimerEvent: {}
+[3.508948] (-) TimerEvent: {}
+[3.589924] (joy2twist) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/joy2twist.dir/build.make:76: CMakeFiles/joy2twist.dir/src/joy2twist.cpp.o] Error 1\n'}
+[3.590253] (joy2twist) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/joy2twist.dir/all] Error 2\n'}
+[3.590314] (joy2twist) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.591991] (joy2twist) CommandEnded: {'returncode': 2}
+[3.598683] (joy2twist) JobEnded: {'identifier': 'joy2twist', 'rc': 2}
+[3.609044] (-) TimerEvent: {}
+[3.609259] (-) EventReactorShutdown: {}

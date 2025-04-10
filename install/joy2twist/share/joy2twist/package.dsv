@@ -1,0 +1,8 @@
+source;share/joy2twist/hook/cmake_prefix_path.ps1
+source;share/joy2twist/hook/cmake_prefix_path.dsv
+source;share/joy2twist/hook/cmake_prefix_path.sh
+source;share/joy2twist/local_setup.bash
+source;share/joy2twist/local_setup.dsv
+source;share/joy2twist/local_setup.ps1
+source;share/joy2twist/local_setup.sh
+source;share/joy2twist/local_setup.zsh

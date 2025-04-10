@@ -1,0 +1,16 @@
+/home/colcon_ws/install/joy2twist/lib/joy2twist/joy2twist
+/home/colcon_ws/install/joy2twist/share/ament_index/resource_index/package_run_dependencies/joy2twist
+/home/colcon_ws/install/joy2twist/share/ament_index/resource_index/parent_prefix_path/joy2twist
+/home/colcon_ws/install/joy2twist/share/joy2twist/environment/ament_prefix_path.sh
+/home/colcon_ws/install/joy2twist/share/joy2twist/environment/ament_prefix_path.dsv
+/home/colcon_ws/install/joy2twist/share/joy2twist/environment/path.sh
+/home/colcon_ws/install/joy2twist/share/joy2twist/environment/path.dsv
+/home/colcon_ws/install/joy2twist/share/joy2twist/local_setup.bash
+/home/colcon_ws/install/joy2twist/share/joy2twist/local_setup.sh
+/home/colcon_ws/install/joy2twist/share/joy2twist/local_setup.zsh
+/home/colcon_ws/install/joy2twist/share/joy2twist/local_setup.dsv
+/home/colcon_ws/install/joy2twist/share/joy2twist/package.dsv
+/home/colcon_ws/install/joy2twist/share/ament_index/resource_index/packages/joy2twist
+/home/colcon_ws/install/joy2twist/share/joy2twist/cmake/joy2twistConfig.cmake
+/home/colcon_ws/install/joy2twist/share/joy2twist/cmake/joy2twistConfig-version.cmake
+/home/colcon_ws/install/joy2twist/share/joy2twist/package.xml

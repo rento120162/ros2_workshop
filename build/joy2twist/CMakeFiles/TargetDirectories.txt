@@ -1,0 +1,10 @@
+/home/colcon_ws/build/joy2twist/CMakeFiles/uninstall.dir
+/home/colcon_ws/build/joy2twist/CMakeFiles/joy2twist_uninstall.dir
+/home/colcon_ws/build/joy2twist/CMakeFiles/joy2twist.dir
+/home/colcon_ws/build/joy2twist/CMakeFiles/test.dir
+/home/colcon_ws/build/joy2twist/CMakeFiles/edit_cache.dir
+/home/colcon_ws/build/joy2twist/CMakeFiles/rebuild_cache.dir
+/home/colcon_ws/build/joy2twist/CMakeFiles/list_install_components.dir
+/home/colcon_ws/build/joy2twist/CMakeFiles/install.dir
+/home/colcon_ws/build/joy2twist/CMakeFiles/install/local.dir
+/home/colcon_ws/build/joy2twist/CMakeFiles/install/strip.dir

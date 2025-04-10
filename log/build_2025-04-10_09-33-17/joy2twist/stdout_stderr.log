@@ -1,0 +1,39 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/joy2twist.dir/src/joy2twist.cpp.o[0m
+[01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:6:17:[m[K [01;31m[Kerror: [m[K‘[01m[KPS4[m[K’ is not a namespace-name
+    6 | using namespace [01;31m[KPS4[m[K
+      |                 [01;31m[K^~~[m[K
+[01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:6:20:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kclass[m[K’
+    6 | using namespace PS4
+      |                    [01;31m[K^[m[K
+      |                    [32m[K;[m[K
+    7 | 
+    8 | [32m[Kclass[m[K example_joy:public ros::NodeHandle, public ps
+      | [32m[K~~~~~[m[K               
+[01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:8:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+    8 | class example_joy:public [01;31m[Kros[m[K::NodeHandle, public ps
+      |                          [01;31m[K^~~[m[K
+[01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:8:31:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[KNodeHandle[m[K’
+    8 | class example_joy:public ros::[01;31m[KNodeHandle[m[K, public ps
+      |                               [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:8:43:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kpublic[m[K’
+    8 | class example_joy:public ros::NodeHandle, [01;31m[Kpublic[m[K ps
+      |                                           [01;31m[K^~~~~~[m[K
+[01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:27:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+   27 |     [01;31m[Kros[m[K::init(argc, argv. "joy_test");
+      |     [01;31m[K^~~[m[K
+[01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:27:27:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before string constant
+   27 |     ros::init(argc, argv. [01;31m[K"joy_test"[m[K);
+      |                           [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:28:21:[m[K [01;31m[Kerror: [m[Kaggregate ‘[01m[Kexample_joy joy[m[K’ has incomplete type and cannot be defined
+   28 |         example_joy [01;31m[Kjoy[m[K;
+      |                     [01;31m[K^~~[m[K
+[01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:29:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+   29 |         [01;31m[Kros[m[K::spin();
+      |         [01;31m[K^~~[m[K
+[01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:30:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+   30 |         [01;31m[Kros[m[K::shutdown();
+      |         [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/joy2twist.dir/build.make:76: CMakeFiles/joy2twist.dir/src/joy2twist.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/joy2twist.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,32 @@
+[0.008s] Invoking command in '/home/colcon_ws/build/joy2twist': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/colcon_ws/build/joy2twist -- -j12 -l12
+[0.040s] [35m[1mConsolidate compiler generated dependencies of target joy2twist[0m
+[0.053s] [ 50%] [32mBuilding CXX object CMakeFiles/joy2twist.dir/src/joy2twist.cpp.o[0m
+[1.791s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:48:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[1.791s]    48 | }
+[1.791s]       |  [01;31m[K^[m[K
+[1.791s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:10:45:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[1.791s]    10 | class JoyTransrateNode : public rclcpp::Node[01;36m[K{[m[K
+[1.791s]       |                                             [01;36m[K^[m[K
+[1.797s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:[m[K In constructor ‘[01m[KJoyTransrateNode::JoyTransrateNode()[m[K’:
+[1.797s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:24:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher[m[K’ was not declared in this scope
+[1.797s]    24 |         [01;31m[Kpublisher[m[K = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
+[1.797s]       |         [01;31m[K^~~~~~~~~[m[K
+[1.800s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:[m[K In lambda function:
+[1.800s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:32:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass JoyTransrateNode[m[K’ has no member named ‘[01m[Kpublisher[m[K’
+[1.800s]    32 |             this->[01;31m[Kpublisher[m[K->publish(message);
+[1.801s]       |                   [01;31m[K^~~~~~~~~[m[K
+[1.805s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:[m[K In constructor ‘[01m[KJoyTransrateNode::JoyTransrateNode()[m[K’:
+[1.806s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:35:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscriber[m[K’ was not declared in this scope
+[1.806s]    35 |         [01;31m[Ksubscriber[m[K = this->create_subscription<sensor_msgs::msg::Joy>("joy", 10, callback);
+[1.806s]       |         [01;31m[K^~~~~~~~~~[m[K
+[1.837s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:36:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kprivate[m[K’
+[1.837s]    36 | [01;31m[Kprivate[m[K:
+[1.837s]       | [01;31m[K^~~~~~~[m[K
+[1.843s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:[m[K At global scope:
+[1.843s] [01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:48:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[1.843s]    48 | }
+[1.843s]       |  [01;31m[K^[m[K
+[3.569s] gmake[2]: *** [CMakeFiles/joy2twist.dir/build.make:76: CMakeFiles/joy2twist.dir/src/joy2twist.cpp.o] Error 1
+[3.569s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/joy2twist.dir/all] Error 2
+[3.569s] gmake: *** [Makefile:146: all] Error 2
+[3.571s] Invoked command in '/home/colcon_ws/build/joy2twist' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/colcon_ws/build/joy2twist -- -j12 -l12

@@ -1,0 +1,28 @@
+[01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:48:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   48 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:10:45:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   10 | class JoyTransrateNode : public rclcpp::Node[01;36m[K{[m[K
+      |                                             [01;36m[K^[m[K
+[01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:[m[K In constructor ‘[01m[KJoyTransrateNode::JoyTransrateNode()[m[K’:
+[01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:24:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher[m[K’ was not declared in this scope
+   24 |         [01;31m[Kpublisher[m[K = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:[m[K In lambda function:
+[01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:32:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass JoyTransrateNode[m[K’ has no member named ‘[01m[Kpublisher[m[K’
+   32 |             this->[01;31m[Kpublisher[m[K->publish(message);
+      |                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:[m[K In constructor ‘[01m[KJoyTransrateNode::JoyTransrateNode()[m[K’:
+[01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:35:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscriber[m[K’ was not declared in this scope
+   35 |         [01;31m[Ksubscriber[m[K = this->create_subscription<sensor_msgs::msg::Joy>("joy", 10, callback);
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:36:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kprivate[m[K’
+   36 | [01;31m[Kprivate[m[K:
+      | [01;31m[K^~~~~~~[m[K
+[01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:[m[K At global scope:
+[01m[K/home/colcon_ws/src/joy2twist/src/joy2twist.cpp:48:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+   48 | }
+      |  [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/joy2twist.dir/build.make:76: CMakeFiles/joy2twist.dir/src/joy2twist.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/joy2twist.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
