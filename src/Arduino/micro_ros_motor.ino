@@ -66,18 +66,14 @@ void error_loop(){
 
 void callback(const void *msgin) {
   const geometry_msgs__msg__Twist * msg = (const geometry_msgs__msg__Twist *)msgin;
-  int i = 0;
-  //String s = "I received : " ;
-  //s += String(int32_msg.data);
-  //char strBuf[20]; s.toCharArray(strBuf, 20);
-  //sub_msg.data.size = s.length();
-  //sub_msg.data.data = strBuf;
+  //デバッグ用
   pub_msg.linear.x = msg->linear.x;
   pub_msg.linear.y = msg->linear.y;
   RCSOFTCHECK(rcl_publish(&publisher, &pub_msg, NULL));
 
-  //stepper.rotate(int());
-  //using steps to movr motor 
+  //using angle to move motor
+  stepper.rotate(msg->linear.x * 15.0);
+  //using steps to move motor 
   //stepper.move(-MOTOR_STEPS*MICROSTEPS);
 }
 
@@ -108,11 +104,6 @@ void setup() {
   int callback_size = 1;
   RCCHECK(rclc_executor_init(&executor, &support.context, callback_size, &allocator));
   RCCHECK(rclc_executor_add_subscription(&executor, &subscriber, &sub_msg, &callback, ON_NEW_DATA));
-
-  // make dataslot for recieve
-	//string_msg.data.data = (char * )malloc(STR_SIZE * sizeof(char));
-	//string_msg.data.size = 0;
-	//string_msg.data.capacity = STR_SIZE;
 
   stepper.begin(RPM, MICROSTEPS);
 }
