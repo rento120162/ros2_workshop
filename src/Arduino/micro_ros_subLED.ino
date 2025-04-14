@@ -1,5 +1,6 @@
 //ros2 run micro_ros_agent micro_ros_agent serial --dev /dev/ttyUSB0
 //ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888　ROS2で通信
+//ros2 topic pub --once /micro_ros_wifi_sub std_msgs/msg/Int32 'data: 5'
 
 
 #include <micro_ros_arduino.h>
@@ -16,6 +17,9 @@
 #error This example is only available for Arduino Portenta, Arduino Giga R1, Arduino Nano RP2040 Connect, ESP32 Dev module, Wio Terminal, Arduino Uno R4 WiFi and Arduino OPTA WiFi 
 #endif
 
+#define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){error_loop();}}
+#define RCSOFTCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){}}
+
 rcl_publisher_t publisher;
 rcl_subscription_t subscriber;
 rclc_executor_t executor;
@@ -25,11 +29,7 @@ rcl_node_t node;
 std_msgs__msg__Int32 pub_msg;
 std_msgs__msg__Int32 sub_msg;
 
-
 #define LED_PIN 21
-
-#define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){error_loop();}}
-#define RCSOFTCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){}}
 
 //char *ssid = "pr500m-266a83-1";
 //char *wifi_passwd = "331f0b043babb";
@@ -56,7 +56,7 @@ void callback(const void *msgin) {
   pub_msg.data = msg->data;
   RCSOFTCHECK(rcl_publish(&publisher, &pub_msg, NULL));
   
-  int i = 0;
+  int i = 1;
   while(msg->data >= i) {
     digitalWrite(LED_PIN, LOW);
     delay(500);

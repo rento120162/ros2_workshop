@@ -15,6 +15,9 @@
 #error This example is only available for Arduino Portenta, Arduino Giga R1, Arduino Nano RP2040 Connect, ESP32 Dev module, Wio Terminal, Arduino Uno R4 WiFi and Arduino OPTA WiFi 
 #endif
 
+#define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){error_loop();}}
+#define RCSOFTCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){}}
+
 rcl_publisher_t publisher;
 rcl_subscription_t subscriber;
 rclc_executor_t executor;
@@ -25,11 +28,7 @@ rcl_timer_t timer;
 std_msgs__msg__Int32 int32_msg;
 std_msgs__msg__String string_msg;
 
-
 #define LED_PIN 21
-
-#define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){error_loop();}}
-#define RCSOFTCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){}}
 
 char* ssid = "pr500m-266a83-1";
 char* wifi_passwd = "331f0b043babb";
@@ -50,7 +49,7 @@ void timer_callback(rcl_timer_t * timer, int64_t last_call_time){
   RCLC_UNUSED(last_call_time);
   if (timer != NULL) {
     String s ="Timer : ";
-    s += int32_msgs.data;  //ｓに追加するときは絶対に分けて書く
+    s += int32_msg.data;  //ｓに追加するときは絶対に分けて書く
     char strBuf[120]; s.toCharArray(strBuf, 120);
     string_msg.data.size = s.length();
     string_msg.data.data = strBuf;
@@ -91,5 +90,6 @@ void setup() {
 
 void loop() {
   delay(100);
+
   RCSOFTCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100)));
 }

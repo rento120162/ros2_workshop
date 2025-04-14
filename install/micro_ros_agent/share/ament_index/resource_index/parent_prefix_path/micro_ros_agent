@@ -1,1 +1,1 @@
-/home/colcon_ws/install/micro_ros_setup:/home/colcon_ws/install/micro_ros_agent:/home/colcon_ws/install/micro_ros_msgs:/opt/ros/humble
+/home/colcon_ws/install/micro_ros_setup:/home/colcon_ws/install/micro_ros_agent:/home/colcon_ws/install/micro_ros_msgs:/home/colcon_ws/install/joy2twist:/opt/ros/humble

@@ -5,7 +5,7 @@ set(joy2twist_BUILD_DEPENDS "rclcpp" "rclcpp_components" "std_msgs" "sensor_msgs
 set(joy2twist_BUILDTOOL_DEPENDS "ament_cmake")
 set(joy2twist_BUILD_EXPORT_DEPENDS "rclcpp" "rclcpp_components" "std_msgs" "sensor_msgs" "geometry_msgs" "rosidl_default_generators")
 set(joy2twist_BUILDTOOL_EXPORT_DEPENDS )
-set(joy2twist_EXEC_DEPENDS "rclcpp" "rclcpp_components" "std_msgs" "sensor_msgs" "geometry_msgs" "rosidl_default_generators")
+set(joy2twist_EXEC_DEPENDS "rosidl_default_runtime" "rclcpp" "rclcpp_components" "std_msgs" "sensor_msgs" "geometry_msgs" "rosidl_default_generators")
 set(joy2twist_TEST_DEPENDS )
 set(joy2twist_GROUP_DEPENDS )
 set(joy2twist_MEMBER_OF_GROUPS )
