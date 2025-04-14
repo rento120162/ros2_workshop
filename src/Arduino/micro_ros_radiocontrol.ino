@@ -91,7 +91,7 @@ void setup() {
 
   //create init_options
   RCCHECK(rclc_support_init(&support, 0, NULL, &allocator));
-  // create node
+  // create node 
   RCCHECK(rclc_node_init_default(&node, "radio_control_node", "", &support));
   // create publisher
   RCCHECK(rclc_publisher_init_default(&publisher, &node, ROSIDL_GET_MSG_TYPE_SUPPORT(geometry_msgs, msg, Twist), "radio_control_pub"));
