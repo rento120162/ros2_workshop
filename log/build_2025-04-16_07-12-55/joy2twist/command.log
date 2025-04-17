@@ -1,0 +1,4 @@
+Invoking command in '/home/colcon_ws/build/joy2twist': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/colcon_ws/build/joy2twist -- -j12 -l12
+Invoked command in '/home/colcon_ws/build/joy2twist' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/colcon_ws/build/joy2twist -- -j12 -l12
+Invoking command in '/home/colcon_ws/build/joy2twist': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/colcon_ws/build/joy2twist
+Invoked command in '/home/colcon_ws/build/joy2twist' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/colcon_ws/build/joy2twist

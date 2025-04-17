@@ -10,6 +10,7 @@
 #include <rcl/error_handling.h>
 #include <rclc/rclc.h>
 #include <rclc/executor.h>
+#include <std_msgs/msg/string.h>
 #include <geometry_msgs/msg/twist.h>
 #include <cstdlib>
 
@@ -26,16 +27,16 @@ rclc_executor_t executor;
 rclc_support_t support;
 rcl_allocator_t allocator;
 rcl_node_t node;
-geometry_msgs__msg__Twist pub_msg;
+std_msgs__msg__String pub_msg;
 geometry_msgs__msg__Twist sub_msg;
 
 #define LED_PIN 21
-#define MTa1_PIN 12//出力A1
-#define MTa2_PIN 14//出力A2
-#define MTb1_PIN 12//出力B1
-#define MTb2_PIN 13//出力B2
+#define MTa1_PIN 4//出力A1
+#define MTa2_PIN 16//出力A2
+#define MTb1_PIN 18//出力B1
+#define MTb2_PIN 19//出力B2
 #define MAX_PWM 255//モータのPWM制御の最大値
-#define MIN_PWM 100//モータのPWM制御の最小値
+#define MIN_PWM 170
 
 //char* ssid = "pr500m-266a83-1";
 //char* wifi_passwd = "331f0b043babb";
@@ -43,9 +44,12 @@ geometry_msgs__msg__Twist sub_msg;
 //char* ssid = "TP-Link_FBCA";
 //char* wifi_passwd = "0918235610";
 //char* IP_address = "10.10.129.125";
-char *ssid = "elecom2g-bcff17";
-char *wifi_passwd = "i7j7yaj35jui";
-char *IP_address = "10.10.128.105";
+//char *ssid = "elecom2g-bcff17";
+//char *wifi_passwd = "i7j7yaj35jui";
+//char *IP_address = "10.10.128.105";
+//char *ssid = "public";
+//char *wifi_passwd = "kutkubn25";
+//char *IP_address = "10.140.170.116";
 unsigned int port = 8888;
 
 void error_loop() {
@@ -58,24 +62,31 @@ void error_loop() {
 void callback(const void *msgin) {
   const geometry_msgs__msg__Twist * msg = (const geometry_msgs__msg__Twist *)msgin;
   //デバッグ用
-  pub_msg.linear.x = msg->linear.x;
-  pub_msg.linear.y = msg->linear.y;
+  String s = "I recieved";
+  s += "\n"; 
+  s += "linear.x : ";
+  s += String(msg->linear.x);
+  s += "\n"; 
+  s += "angular.z : ";
+  s += String(msg->linear.y);
+  char strBuf[120]; s.toCharArray(strBuf, 120);
+  pub_msg.data.size = s.length();
+  pub_msg.data.data = strBuf;
   RCSOFTCHECK(rcl_publish(&publisher, &pub_msg, NULL));
 
   if(msg->linear.x >= 0.0) {
-    analogWrite(MTa1_PIN, 0); //前進
-    analogWrite(MTa2_PIN, abs(msg->linear.x) * MAX_PWM);
-  }else {
-    analogWrite(MTa1_PIN, abs(msg->linear.x) * MAX_PWM);
-    analogWrite(MTa2_PIN, 0); //後進
-  }
-
-  if(msg->linear.x >= 0.0) {
-    analogWrite(MTb1_PIN, 0); //ハンドル右
+    analogWrite(MTb1_PIN, 0); //前進
     analogWrite(MTb2_PIN, abs(msg->linear.x) * MIN_PWM);
   }else {
     analogWrite(MTb1_PIN, abs(msg->linear.x) * MIN_PWM);
-    analogWrite(MTb2_PIN, 0); //ハンドル左
+    analogWrite(MTb2_PIN, 0); //後進
+  }
+  if(msg->linear.y >= 0.0) {
+    analogWrite(MTa1_PIN, 0); //右
+    analogWrite(MTa2_PIN, abs(msg->linear.y) * MAX_PWM);
+  }else {
+    analogWrite(MTa1_PIN, abs(msg->linear.y) * MAX_PWM);
+    analogWrite(MTa2_PIN, 0); //左
   }
 }
 
@@ -91,10 +102,10 @@ void setup() {
 
   //create init_options
   RCCHECK(rclc_support_init(&support, 0, NULL, &allocator));
-  // create node 
+  // create node
   RCCHECK(rclc_node_init_default(&node, "radio_control_node", "", &support));
   // create publisher
-  RCCHECK(rclc_publisher_init_default(&publisher, &node, ROSIDL_GET_MSG_TYPE_SUPPORT(geometry_msgs, msg, Twist), "radio_control_pub"));
+  RCCHECK(rclc_publisher_init_default(&publisher, &node, ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, String), "radicon_rv"));
   // create subscriber
   RCCHECK(rclc_subscription_init_default(&subscriber, &node, ROSIDL_GET_MSG_TYPE_SUPPORT(geometry_msgs, msg, Twist), "cmd_vel"));
   // create executor
@@ -111,6 +122,6 @@ void setup() {
 }
 
 void loop() {
-  RCSOFTCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100)));
+  RCSOFTCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(10)));
   delay(10);
 }
