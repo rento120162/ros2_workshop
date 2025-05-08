@@ -1,1 +1,2 @@
-This is a repository for tomato-harvesting-robot
+# ROS2 workshop
+This is a repository for RSO2 workshop
