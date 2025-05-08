@@ -1,2 +1,2 @@
-# tomaton
-This is a repository for tomato-harvesting-robot
+# ROS2_workshop
+This is a repository for ROS2 workshop
