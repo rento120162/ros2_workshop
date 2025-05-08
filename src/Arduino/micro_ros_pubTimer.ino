@@ -30,12 +30,9 @@ std_msgs__msg__String string_msg;
 
 #define LED_PIN 21
 
-char* ssid = "pr500m-266a83-1";
-char* wifi_passwd = "331f0b043babb";
-char* IP_address = "192.168.1.10";
-//char* ssid = "TP-Link_FBCA";
-//char* wifi_passwd = "0918235610";
-//char* IP_address = "10.10.129.125";
+char* ssid = " ";
+char* wifi_passwd = " ";
+char* IP_address = " ";
 unsigned int port_num = 8888;
 
 void error_loop(){
