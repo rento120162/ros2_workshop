@@ -31,15 +31,9 @@ rcl_timer_t timer;
 geometry_msgs__msg__Twist pub_msg;
 geometry_msgs__msg__Twist sub_msg;
 
-//char *ssid = "pr500m-266a83-1";
-//char *wifi_passwd = "331f0b043babb";
-//char *IP_adress = "192.168.1.10";
-//char *ssid = "TP-Link_FBCA";
-//char *wifi_passwd = "0918235610";
-//char *IP_address = "10.10.129.125";
-char *ssid = "elecom2g-bcff17";
-char *wifi_passwd = "i7j7yaj35jui";
-char *IP_address = "10.10.128.105";
+char *ssid = " ";
+char *wifi_passwd = " ";
+char *IP_address = " ";
 unsigned int port = 8888;
 
 // Motor steps per revolution. Most steppers are 200 steps or 1.8 degrees/step
