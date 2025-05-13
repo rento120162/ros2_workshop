@@ -20,7 +20,6 @@ find_package(rosidl_default_generators REQUIRED)
 
 add_executable(joy2twist src/joy2twist_node.cpp)
 ament_target_dependencies(joy2twist rclcpp std_msgs sensor_msgs geometry_msgs)
-target_link_libraries(joy2twist  ${catkin_LIBRARIES})
 
 install(TARGETS joy2twist
   DESTINATION lib/${PROJECT_NAME})
