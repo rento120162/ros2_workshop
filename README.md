@@ -3,7 +3,7 @@ This is a repository for ROS2 workshop
 
 ## How to use github
 ```bash
-#If you connect local repository to remote , execute below on your ros2 container.
+#If you connect local repository to remote one, execute below on your ros2 container.
 #You should do this only once when your first time
 git config --global init.defaultBranch main
 git init
