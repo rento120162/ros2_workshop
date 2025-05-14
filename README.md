@@ -4,6 +4,15 @@ This is a repository for ROS2 workshop
 ## How to use github
 ```bash
 #If you connect local repository to remote one, execute below on your ros2 container.
+
+touch .gitignore
+vi .gitignore
+#on the .gitignore
+#  build
+#  install
+#  log
+#If there are files(or folder) you want to ignore, put it on .gitignore
+
 #You should do this only once when your first time
 git config --global init.defaultBranch main
 git config --global user.name "user_name"
@@ -18,14 +27,6 @@ git pull origin main
 
 git branch
 #then you could see your branch "main"
-
-touch .gitignore
-vi .gitignore
-#on the .gitignore
-#  build
-#  install
-#  log
-#If there are files(or folder) you want to ignore, put it on .gitignore
 
 git add .
 #to commit all files, if not you can choose your own file
