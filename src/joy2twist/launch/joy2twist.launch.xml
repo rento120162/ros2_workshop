@@ -1,0 +1,9 @@
+<launch>
+    <node pkg='joy2twist' exec='joy2twist_node' name='joy2twist_node' output='screen'  namespace='namespace01'>
+        <remap from='cmd_vel' to='cmd_vel2'/>
+    </node>
+
+    <node pkg='joy' exec='joy_node' name='joy_node' output='screen' namespace='namespace02'>
+        <remap from='joy' to='joy'/>
+    </node>
+</launch>
