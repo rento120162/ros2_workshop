@@ -24,7 +24,9 @@ git add .
 git status
 #you could check staging area (you can check files to be commited)
 
-git commit 
+git commit -m"comment"
+#put description of chenge to "comment" 
+
 git push origin main
 #push to main branch if you want to change target branch, chenge it
 #you are required your name and access tokenkey
