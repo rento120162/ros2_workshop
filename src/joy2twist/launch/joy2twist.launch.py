@@ -9,8 +9,8 @@ def generate_launch_description():
         executable = 'joy2twist_node',
         name = 'joy2twist_node',
         output = 'screen',
-        namespace = 'namespace01',
-        remappings = [('cmd_vel', 'cmd_vel2')]
+        #namespace = 'namespace01',
+        #remappings = [('cmd_vel', 'cmd_vel2')]
     )
     
     pub_node2 = Node(
@@ -18,8 +18,8 @@ def generate_launch_description():
         executable = 'joy_node',
         name = 'joy_node',
         output = 'screen',
-        namespace = 'namespace02',
-        remappings = [('joy', 'joy')]
+        #namespace = 'namespace02',
+        #remappings = [('joy', 'joy')]
     )
     
     ld.add_action(pub_node1)
