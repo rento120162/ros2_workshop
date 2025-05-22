@@ -1,5 +1,8 @@
+# ros2_workshop
 This is a repository for ros2 workshop
 
+## How to use remote repository
+```bash
 #If you connect local repository to remote one, execute below on your ros2 container.
 
 touch .gitignore
@@ -36,3 +39,5 @@ git commit -m"comment"
 git push origin main
 #push to main branch if you want to change target branch, chenge it
 #you are required your name and access tokenkey
+
+```
