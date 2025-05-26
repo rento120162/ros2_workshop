@@ -15,7 +15,7 @@ If you could see like this, you should add user to docker group to give user per
 permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock:
 ```
 ```bash
-sudo chmod 771 /var/run/docker.sock
+sudo chmod 777 /var/run/docker.sock
 sudo groupadd docker
 sudo usermod -aG docker $USER
 ```
